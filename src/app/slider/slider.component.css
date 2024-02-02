@@ -1,0 +1,21 @@
+.slider{
+    background-color: #dad6d6b0;
+    padding:50px;
+}
+h2{
+    color:rgb(226, 121, 34);
+    text-align: center;}
+    p{
+        text-align: center;
+    padding-inline: 80px;}
+.btn{
+    display: flex;
+    justify-content: center;
+}
+    button{
+    background-color: rgb(211, 119, 32);
+    color:white;
+    border-color: transparent;
+    padding:10px;
+    border-radius: 50px;
+}

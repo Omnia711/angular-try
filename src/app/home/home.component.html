@@ -1,0 +1,53 @@
+<div class="home pt-5 mt-5">
+  <h2>Home works!</h2>
+  <h3
+    class="text-center"
+    [style.background-color]="onsale == true ? 'green' : 'red'"
+    style="color: white"
+  >
+    Hi {{ userName }}
+  </h3>
+  <h4
+    class="text-center"
+    [class.bg-danger]="onsale == true"
+    style="color: white"
+  >
+    Class Binding
+  </h4>
+  <p>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis
+    aspernatur perferendis quis tempore sunt sit iure ipsum nesciunt rerum
+    harum!
+  </p>
+
+  <div class="img d-flex justify-content-center">
+    <img [src]="imgpath" alt="" class="w-25" />
+  </div>
+  <div class="btn">
+    <button class="btn btn-info btn-lg">Folll</button>
+  </div>
+  <section>
+    <input type="text" class="form-control" [(ngModel)]="searchTerm" />
+    <h3 class="mt-2" style="color: red">{{ searchTerm }}</h3>
+  </section>
+  <section>
+    <h4
+      [ngClass]="{
+        'bg-info': price > 1000,
+        'text-center': onsale == true
+      }"
+    >
+      ng-Class
+    </h4>
+    <h3
+      [ngStyle]="{
+        'background-color': price > 1000 ? 'gray' : '#09c',
+        color: onsale == true ? 'black' : '#ccc',
+        'text-align': onsale == true ? 'center' : 'start'
+      }"
+    >
+      ngStyle
+    </h3>
+  </section>
+  <app-card [UserNameFromParent]="userName"></app-card>
+</div>

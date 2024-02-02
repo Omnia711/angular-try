@@ -1,0 +1,13 @@
+.home{background-color:#ccccccbd;
+padding:50px;}
+.home h2{
+    color:rgb(4, 116, 153);
+    text-align: center;}
+    .home  p{
+        color:rgb(3, 34, 44);
+        text-align: center;
+    padding-inline: 80px;}
+    .home .btn{
+    display: flex;
+    justify-content: center;
+}

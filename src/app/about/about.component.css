@@ -1,0 +1,15 @@
+.about{
+    background-color: #dad6d6b0;
+    padding:50px;
+}
+h2{
+    color: rgb(3, 102, 3);
+    text-align: center;}
+p{
+    color:rgb(3, 49, 3);
+    text-align: center;
+padding-inline: 80px;}
+.btn{
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,34 @@
+<div class="slider pt-5 mt-5">
+  <h2>Slider works!</h2>
+  <p>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis
+    aspernatur perferendis quis tempore sunt sit iure ipsum nesciunt rerum
+    harum!
+  </p>
+  <div class="btn">
+    <button>Basha</button>
+  </div>
+  <section class="text-center p-4">
+    <table *ngIf="users.length > 0 == true" class="table">
+      <thead style="background-color: #4f709c; color: white">
+        <th>ID</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Salary</th>
+        <th>Action</th>
+      </thead>
+      <tbody>
+        <tr
+          [class.table-primary]="odd == true"
+          *ngFor="let user of users; index as i; odd as odd"
+        >
+          <td>{{ i }}</td>
+          <td>{{ user.name }}</td>
+          <td>{{ user.age }}</td>
+          <td>{{ user.salary }}</td>
+          <td>{{ odd }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+</div>
